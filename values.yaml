@@ -1,4 +1,5 @@
-global:
-  compatibility:
-    openshift:
-      adaptSecurityContext: force
+sealed-secrets:
+  global:
+    compatibility:
+      openshift:
+        adaptSecurityContext: force
