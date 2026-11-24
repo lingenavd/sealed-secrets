@@ -1,5 +1,11 @@
 sealed-secrets:
-  global:
-    compatibility:
-      openshift:
-        adaptSecurityContext: force
+  podSecurityContext:
+    fsGroup: null
+  containerSecurityContext:
+    runAsUser: null
+
+sealed-secrets-web:
+  deployment:
+    securityContext:
+      runAsUser: null
+      runAsGroup: null
